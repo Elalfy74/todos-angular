@@ -1,0 +1,15 @@
+<h3 class="mb-8 text-xl text-center">Create Todo</h3>
+<div class="flex justify-center gap-10">
+  <input
+    [(ngModel)]="newTodo"
+    type="text"
+    placeholder="todo"
+    class="w-1/4 placeholder-gray-400/70 dark:placeholder-gray-500 rounded-md border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40"
+  />
+  <button
+    (click)="onCreateTodo()"
+    class="flex-shrink-0 px-8 py-2 mt-10 text-lg text-white bg-blue-500 border-0 rounded focus:outline-none hover:bg-blue-600 sm:mt-0"
+  >
+    Create
+  </button>
+</div>
